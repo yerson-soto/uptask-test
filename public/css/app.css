@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+:root {
+    --primary: #1abc9c;
+    --primary-dark: #16a085;
+    --secondary: #f1c40f;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.btn-primary {
+    background: var(--secondary);
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    padding: 1rem 1rem;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar {
+    background: var(--primary-dark);
+    height: 4rem;
+    line-height: 4rem;
+    box-shadow: 1px 0px 5px rgb(189, 189, 189);
+}
+
+.nav-items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items .nav-link{
+    font-size: .8rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-items .nav-logo {
+    flex: .7;
+}
+
+.nav-items .nav-logo .nav-link {
+    font-size: 1.5rem;
+}
+
+.content {
+    display: flex;
+}
+
+aside {
+    width: 300px;
+}
+
+.panel {
+    width: 300px;
+    position: fixed;
+    top: 4rem;
+    bottom: 0;
+    background: var(--primary);
+    padding: 0 3rem;
+}
+
+.new-project a {
+    margin: 2rem auto;
+    display: block;
+}
+
+.projects h2 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.projects-list {
+    list-style: none;
+    padding: 0;
+}
+
+.projects-list .project {
+    padding: .5rem 0;
+}
+
+.projects-list .project a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.projects-list .project a:hover {
+    color: var(--secondary);
+}
+
